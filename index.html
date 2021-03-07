@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPS Travel Page Mockup</title>
+</head>
+<body>
+    <!--Body Of the Web Page-->
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel Ecuador</h2>
+            <div class="toggle"></div>
+        </header>
+        <!--video Showcase-->
+        <video src="Sample Video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop To</h2>
+            <h3>Exploring the World</h3>
+            <p> 
+                A holiday to the Galapagos Islands is most likely the experience of your entire life. 
+                Situated 1,000 kilometers from the Ecuador, 
+                the archipelago is composed of 13 large islands, five of which are inhabited. 
+                Read more about the well-known Islands taking a excursion here!
+            </p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!--MENU Section-->
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="">Travel</a></li>
+        </ul>
+    </div>
+    <!--Script Menu-->
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+      })
+    </script>
+<!--End Of the Body-->
+</body>
+</html>
